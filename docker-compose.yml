@@ -19,7 +19,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=dokploy-network
-      - traefik.http.routers.software-test.rule=Host(`${FRONTEND_DOMAIN:-test.mercantec.tech}`)
+      - traefik.http.routers.software-test.rule=Host(`${FRONTEND_DOMAIN:-testing.mercantec.tech}`)
       - traefik.http.routers.software-test.entrypoints=web
       - traefik.http.routers.software-test.service=software-test
       - traefik.http.services.software-test.loadbalancer.server.port=80

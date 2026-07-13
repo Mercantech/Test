@@ -388,5 +388,5 @@ På Mercantec lærer I NUnit + Moq. Koncepterne (AAA, mocking, isolation) er de 
 | Vil automatisere i pipeline | [CI/CD](/ci-cd/) |
 
 ::: tip Opgave
-Start med at køre de eksisterende tests i `Backend/Tests/`, læs `AuthServiceTests.cs`, og skriv derefter én ny test til en metode du selv har lavet. Se [opgaven](/unit-testing/opgave/).
+Start med at køre de eksisterende tests i `Backend/Tests/`, læs `AuthServiceTests.cs`, og skriv derefter én ny test til en metode du selv har lavet. Se [opgaven](/unit-testing/opgave).
 :::
