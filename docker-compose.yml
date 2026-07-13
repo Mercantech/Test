@@ -1,0 +1,35 @@
+# Dokploy-deploy: docker compose up -d --build
+#
+# Routing (Mercantec — samme mønster som øvrige Mercantec-apps):
+#   1. Cloudflare: *.mercantec.tech (wildcard CNAME → tunnel)
+#   2. Tunnel ingress: *.mercantec.tech → http://localhost:80
+#   3. Traefik (Dokploy): Host(`test.mercantec.tech`) → container-port 80
+#
+# Lokal udvikling med host-porte:
+#   docker compose -f docker-compose.yml -f docker-compose.local.yml up --build
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - dokploy-network
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=dokploy-network
+      - traefik.http.routers.test-pensum.rule=Host(`${FRONTEND_DOMAIN:-test.mercantec.tech}`)
+      - traefik.http.routers.test-pensum.entrypoints=web
+      - traefik.http.routers.test-pensum.service=test-pensum
+      - traefik.http.services.test-pensum.loadbalancer.server.port=80
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+
+networks:
+  dokploy-network:
+    external: true
