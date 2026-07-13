@@ -2,13 +2,14 @@ import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
 export default withMermaid(defineConfig({
-  title: 'Test Pensum',
+  title: 'Software Test',
   description: 'Unit, Integration og E2E testing — Mercantec',
   lang: 'da-DK',
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   themeConfig: {
     logo: '/favicon.svg',
     nav: [
+      { text: 'Kom i gang', link: '/introduktion/kom-i-gang' },
       { text: 'Introduktion', link: '/introduktion/' },
       { text: 'Unit', link: '/unit-testing/' },
       { text: 'Integration', link: '/integration-testing/' },
@@ -20,6 +21,7 @@ export default withMermaid(defineConfig({
         text: 'Introduktion',
         collapsed: false,
         items: [
+          { text: 'Kom i gang', link: '/introduktion/kom-i-gang' },
           { text: 'Overblik', link: '/introduktion/' },
           { text: 'Test-pyramiden', link: '/introduktion/test-pyramiden' },
           { text: 'Hvorfor teste?', link: '/introduktion/hvorfor-teste' },
@@ -72,7 +74,7 @@ export default withMermaid(defineConfig({
       { icon: 'github', link: 'https://github.com/Mercantech/Test' },
     ],
     footer: {
-      message: 'Mercantec — pensum om software testing',
+      message: 'Mercantec — Software Test',
       copyright: 'Copyright © Mercantec',
     },
     docFooter: {

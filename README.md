@@ -1,4 +1,4 @@
-# Test Pensum
+# Software Test
 
 Pensum om **Unit, Integration og E2E testing** til Mercantec — hostet på [test.mercantec.tech](https://test.mercantec.tech).
 

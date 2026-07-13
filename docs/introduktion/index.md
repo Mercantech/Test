@@ -1,6 +1,6 @@
 # Introduktion
 
-Velkommen til test-pensum på Mercantec. Her lærer du at forstå og anvende de tre centrale testniveauer: **unit**, **integration** og **E2E** — og hvordan de hænger sammen i en professionel teststrategi.
+Velkommen til **Software Test** på Mercantec. Her lærer du at forstå og anvende de tre centrale testniveauer: **unit**, **integration** og **E2E** — og hvordan de hænger sammen i en professionel teststrategi.
 
 <LearningGoals
   section="introduktion"
@@ -15,6 +15,7 @@ Velkommen til test-pensum på Mercantec. Her lærer du at forstå og anvende de 
 
 | Emne | Indhold |
 |------|---------|
+| [Kom i gang](/introduktion/kom-i-gang) | Testprojekter i .NET, opsætning og første `dotnet test` |
 | [Test-pyramiden](/introduktion/test-pyramiden) | De tre niveauer, scopes og vores teststrategi |
 | [Hvorfor teste?](/introduktion/hvorfor-teste) | ROI, teknisk gæld og investering i kvalitet |
 
@@ -29,5 +30,5 @@ Store dele af unit testing-pensumet er inspireret af bogen [*Unit Testing: Princ
 Vi bruger gennemgående eksempler fra [h4-mags](https://github.com/Mercantech/h4-mags) — et Kahoot-lignende projekt med C# backend, Flutter-app og Bruno E2E-tests.
 
 ::: tip Næste skridt
-Når du har læst introduktionen, går du videre til [Unit testing](/unit-testing/) — fundamentet i test-pyramiden.
+Har du ikke kørt tests endnu? Start med [Kom i gang](/introduktion/kom-i-gang). Derefter [Unit testing](/unit-testing/) — fundamentet i test-pyramiden.
 :::

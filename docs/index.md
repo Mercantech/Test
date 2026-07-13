@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Test Pensum
+title: Software Test
 titleTemplate: false
 hero:
-  name: Test Pensum
+  name: Software Test
   text: Unit, Integration og E2E
   tagline: Lær at teste software professionelt — fra isolerede unit tests til Bruno E2E og CI/CD pipelines.
   image:
@@ -11,11 +11,11 @@ hero:
     alt: Test-pyramiden
   actions:
     - theme: brand
-      text: Start med introduktion
-      link: /introduktion/
+      text: Kom i gang
+      link: /introduktion/kom-i-gang
     - theme: alt
-      text: Gå til Unit testing
-      link: /unit-testing/
+      text: Test-pyramiden
+      link: /introduktion/test-pyramiden
 features:
   - icon: 🧪
     title: Unit testing
@@ -40,6 +40,11 @@ features:
 Følg den logiske læringssti fra grundlæggende forståelse til automatisering i pipelinen.
 
 <div class="pensum-grid">
+  <div class="pensum-card">
+    <h3>Kom i gang</h3>
+    <p>Testprojekter i .NET, NuGet-pakker, dotnet test og Bruno — fra scratch.</p>
+    <a href="/introduktion/kom-i-gang">Læs mere →</a>
+  </div>
   <div class="pensum-card">
     <h3>1. Introduktion</h3>
     <p>Test-pyramiden, de tre niveauer og hvorfor tests betaler sig over tid.</p>

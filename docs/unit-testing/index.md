@@ -40,6 +40,8 @@ Kør tests lokalt:
 dotnet test Backend/Tests/
 ```
 
+Har du ikke sat testprojektet op endnu? Se [Kom i gang](/introduktion/kom-i-gang).
+
 ::: tip Næste emne
 Når unit tests ikke er nok — fordi du skal verificere at API og database virker sammen — går du videre til [Integration testing](/integration-testing/).
 :::
